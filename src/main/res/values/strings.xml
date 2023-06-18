@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Inventory Application</string>
+    <string name="user_name_prompt">Username</string>
+    <string name="password_prompt">Password</string>
+    <string name="login_button">LOG IN</string>
+    <string name="register_button">REGISTER</string>
+    <string name="grid_layout">Inventory</string>
+    <string name="add_button">Add Item</string>
+    <string name="delete_button">Delete</string>
+    <string name="permission_button">Grant Permission</string>
+    <string name="new_item_field">New Item Name:</string>
+    <string name="create_account">Create</string>
+    <string name="new_username_field">New username</string>
+    <string name="create_pwd">New password</string>
+    <string name="item_quantity_field">Item Quantity</string>
+    <string name="item_quantity"></string>
+    <string name="view_items">View Items</string>
+    <string name="item_name">Item Name</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="add_items_title">Add Items</string>
+
+
+</resources>

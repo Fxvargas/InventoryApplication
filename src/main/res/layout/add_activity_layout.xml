@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddItemActivity">
+
+    <TextView
+        android:id="@+id/addItemsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/add_items_title"
+        android:textColor="@color/purple_700"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutItemQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="8"
+        app:layout_constraintBottom_toTopOf="@+id/addItemsTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="432dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/round_corners"
+        android:text="@string/add_button"
+        app:backgroundTint="@color/teal_700"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutItemQuantity" />
+
+
+    <EditText
+        android:id="@+id/newItemField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:layout_marginBottom="55dp"
+        android:gravity="center"
+        android:hint="@string/item_name"
+        android:padding="5dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/newItemQTY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addItemsTitle" />
+
+    <EditText
+        android:id="@+id/newItemQTY"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="87dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:hint="@string/item_quantity_field"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/addBTN"
+        app:layout_constraintEnd_toStartOf="@+id/itemQtyIncrease"
+        app:layout_constraintStart_toEndOf="@+id/cancelBTN"
+        app:layout_constraintTop_toBottomOf="@+id/newItemField" />
+
+    <ImageButton
+        android:id="@+id/itemQtyDecrease"
+        android:layout_width="64dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="241dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="61dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/cancelBTN"
+        app:layout_constraintEnd_toStartOf="@+id/newItemQTY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addItemsTitle"
+        app:srcCompat="@drawable/decrease"
+        app:tint="@color/purple_200" />
+
+    <ImageButton
+        android:id="@+id/itemQtyIncrease"
+        android:layout_width="49dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="298dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="316dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/newItemQTY"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutItemQuantity"
+        app:srcCompat="@drawable/increase"
+        app:tint="@color/purple_200" />
+
+    <Button
+        android:id="@+id/cancelBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="218dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="201dp"
+        android:background="@drawable/round_corners"
+        android:text="@string/cancel_button"
+        android:textSize="16sp"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addBTN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newItemField" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
